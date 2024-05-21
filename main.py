@@ -1,7 +1,7 @@
-print ("Calculadora de IMC")
+print("Calculadora de IMC")
 
-nome = input("Qual é o seu nome? " )
-idade = input (f"Qual sua idade? ")
+nome = input("Qual é o seu nome? ")
+idade = input(f"Qual sua idade? ")
 peso = str(input("Qual seu peso (em KG)? ")).replace(',', '.')
 altura = str(input("Qual sua Altura? ")).replace(',', '.')
 
@@ -16,18 +16,16 @@ imc = (peso / (altura ** 2))
 print(f"seu IMC é: {imc:.2f}")
 
 if imc < 16:
-	print("Muito abaixo do peso ideal.\n Procure um especialista.")
-elif imc < 17:
-	print("abaixo do peso ideal.\n Procure um especialista.")
+    print(f"{nome} você está com muito abaixo do peso ideal.\n Procure um especialista.")
 elif imc < 18.5:
-	print("abaixo do peso ideal.\n Procure um especialista.")
+    print(f"{nome} você está abaixo do peso ideal.\n Procure um especialista.")
 elif imc < 25:
-	print("Você está Saudável.\n")
+    print(f"{nome} Você está Saudável.\n")
 elif imc < 30:
-	print("Acima do peso ideal.\n")
+    print(f"{nome} você está acima do peso ideal.\n")
 elif imc < 35:
-	print("Seu estado é de Obesidade Grau I\n")
+    print(f"{nome} você está com Obesidade Grau I\n")
 elif imc < 40:
-	print("Seu estado é de Obesidade Grau II\n")
+    print(f"{nome} você está com Obesidade Grau II\n")
 else:
-	print("Seu estado é de Obesidade Grau III\n")
+    print(f"{nome} você está com Obesidade Grau III\n")
